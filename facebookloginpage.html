@@ -7,38 +7,44 @@
     <link rel="stylesheet" href="./facebookloginpage.css">
 </head>
 <body>
-    <div class="wholebox">
+    <div id="wholebox">
     <div class="titlebox">
         <h1 style="color: rgb(0, 106, 255); size: 50;">facebook</h1>
         <p>Facebook helps you connect and share</p>
         <p>with the people in your life.</p>
     </div>
-    
     <div class = "inputbox">
+    <div class = "shadowbox">
         <form action="#">
             
                 <center>
-            <div>
+            <div class="text">
                 <input type="text" name="emailorphnum" placeholder="  Email address or phone number" size="20">
             </div>
             <br>
-            <div>
+            <div class="text">
                 <input type="password" name="psw" placeholder="  Password">
             </div>
             <br>
-            <div>
+            <div class = "button">
                 <button style="background-color: rgb(0, 106, 255); color: white;">Log in</button>
             </div>
            <br>
-            
-                <a href="./facebookloginpage.html" target="_blank">Forgotten password?</a>
+                <div id = "forgottenlink">
+                    <a href="./facebookloginpage.html" target="_blank">Forgotten password?</a>
+                </div>
+                
                 <hr>
-                <button style="background-color: rgb(76, 218, 76); color: white;">Create new account</button>
+                <div id = "greenbutton">
+                    <button style="background-color: rgb(76, 218, 76); color: white; width: 50%; font-size: 15px; ">Create new account</button>
+                </div>
+                <br> 
             </center>
         </form>
-        
-        
+    </div> 
+    <div id = "sent"><p style="font-size: 14px"><b>Create a page</b> for a celebrity, brand or business.</p></div>  
     </div>
+    
 
 </div>
 </body>

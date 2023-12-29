@@ -4,7 +4,7 @@ body{
     background: rgb(255, 254, 254);
     font-family: Arial, sans-serif;
 }
-.wholebox{
+#wholebox{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,35 +13,43 @@ body{
 }
 .titlebox {
     width: 500px;
+    text-align: center;
     h1{
         font-size: 60px;
         margin-bottom: 0;
     }
     p{
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 5px 0;
+        /* margin-top: 0;
+        margin-bottom: 0; */
         font-size: 20px;
     }
 }
-.inputbox{
+.shadowbox{
+    /* display: flex; */
+    /* flex-direction: column; */
     width: 350px;
     padding: 15px;
     text-align: center;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0px 2px 10px 1px rgb(203, 201, 201);
 }
-.inputbox input{
+.inputbox .shadowbox input{
     width: 100%;
+    /* height: 55px; */
     font-size: 18px;
     padding: 15px;
     box-sizing: border-box;
     outline: none;
-    /* border: rgb(144, 139, 139); */
-    border-radius: 2px;
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 6px;
+    margin-bottom: 15px; /*new line*/
+    /* font-size: 1rem; */
+    
     /* border: rgb(59, 58, 58); */
 }
-.inputbox button{
+.inputbox .shadowbox button{
     width: 100%;
     box-sizing: border-box;
     font-size: 20px;
@@ -49,4 +57,71 @@ body{
     border-radius: 5px;
     padding: 13px;
     border: none;
+    margin-bottom: 15px; /*new line*/
 }
+.inputbox .shadowbox #greenbutton{
+    padding-top: 16px;
+}
+.inputbox .shadowbox #forgottenlink{
+    padding-bottom: 16px;
+}
+.inputbox .sent{
+    width: 100%;
+    /* align-self:self-end; */
+    margin-top: 28px;
+}
+.inputbox{
+    align-items: center;
+    text-align: center;
+}
+/* Mobile */
+@media (max-width: 900px){
+    #wholebox .titlebox, .inputbox, .shadowbox, .inputbox .shadowbox .input,.inputbox .shadowbox .button, #forgottenlink, #greenbutton, #sent{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .titlebox{
+        margin-bottom: 30px;
+    }
+    /* text, .button, #forgottrnlink, #greenbutton, #sent{
+        height: auto;
+
+    } */
+ }
+@media (max-width: 500px){
+    .titlebox, .inputbox{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .inputbox{
+        display: flex;
+        justify-content: center;
+        /* width: 90%; */
+        /* text-align: center; */
+    }
+    #wholebox{
+        flex-direction: column;
+        align-items: center;
+    }
+    #wholebox .titlebox h1{
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    #wholebox .titlebox p{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    #wholebox .shadowbox{
+        padding: 15px;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    /* #wholebox .titlebox, .inputbox, .shadowbox, .text, .button, #forgottrnlink, #greenbutton, #sent{
+        flex-direction: column;
+        text-align: center;
+        width: 100%; */
+    /* } */
+} 
