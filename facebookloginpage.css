@@ -1,127 +1,209 @@
-body{
-    padding: 0;
-    margin: 0;
-    background: rgb(255, 254, 254);
-    font-family: Arial, sans-serif;
-}
-#wholebox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-}
-.titlebox {
-    width: 500px;
-    text-align: center;
-    h1{
-        font-size: 60px;
-        margin-bottom: 0;
-    }
-    p{
-        margin: 5px 0;
-        /* margin-top: 0;
-        margin-bottom: 0; */
-        font-size: 20px;
-    }
-}
-.shadowbox{
-    /* display: flex; */
-    /* flex-direction: column; */
-    width: 350px;
-    padding: 15px;
-    text-align: center;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 0px 2px 10px 1px rgb(203, 201, 201);
-}
-.inputbox .shadowbox input{
-    width: 100%;
-    /* height: 55px; */
-    font-size: 18px;
-    padding: 15px;
-    box-sizing: border-box;
-    outline: none;
-    border: 2px solid rgb(200, 200, 200);
-    border-radius: 6px;
-    margin-bottom: 15px; /*new line*/
-    /* font-size: 1rem; */
-    
-    /* border: rgb(59, 58, 58); */
-}
-.inputbox .shadowbox button{
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 5px;
-    padding: 13px;
+.box{
+    font-family: inherit;
+    background-color: black;
     border: none;
-    margin-bottom: 15px; /*new line*/
-}
-.inputbox .shadowbox #greenbutton{
-    padding-top: 16px;
-}
-.inputbox .shadowbox #forgottenlink{
-    padding-bottom: 16px;
-}
-.inputbox .sent{
-    width: 100%;
-    /* align-self:self-end; */
-    margin-top: 28px;
-}
-.inputbox{
-    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1),
+    0 8px 16px rgba(0,0,0,.1);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 10px 0 28px;
+    width: 396px;
     text-align: center;
 }
-/* Mobile */
-@media (max-width: 900px){
-    #wholebox .titlebox, .inputbox, .shadowbox, .inputbox .shadowbox .input,.inputbox .shadowbox .button, #forgottenlink, #greenbutton, #sent{
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
+.form{
+    text-align: center;
+    /* padding: 5px 8px; */
+}
+#email, #psw{
+    background-color: #ffffff;
+    padding: 14px 16px;
+    width: 332px;
+    /* height: 22px; */
+    line-height: 16px;
+    border: 1px solid #dddfe2;
+    vertical-align: middle;
+    font-size: 17px;
+    border-radius: 6px;
+    margin: 6px 0;
+}
+/* .ep{
+    padding-top: 10px;
+} */
+.loginButton{
+    background-color: #0866ff;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 365px;
+    font-family: 20px  Arial, Helvetica, sans-serif;
+    margin: 6px 0 0;
+    
+}
+.fp{
+    color: #0866ff;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-bottom: 20px; */
+}
+.li{
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}
+.cna{
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.qf{
+    margin-top: 28px;
+    text-align: center;
+}
+.part2{
+    height: 456px;
+    width: 396px;
+}
+.part2{
+    display: inline-block;
+    vertical-align: top;
+}
+img{
+    border: 0;
+    /* overflow-clip-margin: content-box; */
+    overflow: clip;
+    overflow-clip-margin: content-box;
+}
+.f1{
+    height: 106px;
+    margin: -28px;
+}
+.im{
+    padding: 112px 0 16px;
+}
+.part1{
+    box-sizing: border-box;
+    margin-right: 0;
+    padding-right: 32px;
+    /* width: 500px; */
+    width: 580px;
+}
+.part1{
+    display: inline-block;
+    vertical-align: top;
+}
+.q1{
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    padding: 0 0 20px;
+    width: 500px;
+    font-size: 28px;
+    line-height: 32px;
+}
+h2{
+    margin: 0;
+}
+.tot{
+    position: relative;
+    margin: 0 auto;
+    width: 980px;
+}
+.fin{
+    padding-bottom: 112px;
+    padding-top: 72px;
+    min-width: 500px;
+}
+@media only screen and (max-width: 1075px) {
+    .q1 {
+        font-size: 24px;
+        line-height: 28px;
+        width: auto;
     }
-    .titlebox{
-        margin-bottom: 30px;
+    .part1 {
+        width: 400px;
     }
-    /* text, .button, #forgottrnlink, #greenbutton, #sent{
-        height: auto;
+    .tot {
+        height: 496px;
+        margin: 0 40px;
+        width: auto;
+        padding: 20px 0;
+    }
+    .part2 {
+        float: right;
+    }
+}
 
-    } */
- }
-@media (max-width: 500px){
-    .titlebox, .inputbox{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .inputbox{
+@media only screen and (max-width: 900px) {
+    .tot {
         display: flex;
-        justify-content: center;
-        /* width: 90%; */
-        /* text-align: center; */
-    }
-    #wholebox{
         flex-direction: column;
         align-items: center;
+        padding-top: 0px;
+        padding: 0px;
     }
-    #wholebox .titlebox h1{
-        font-size: 3rem;
-        margin-bottom: 10px;
-    }
-    #wholebox .titlebox p{
-        font-size: 1rem;
-        margin-bottom: 10px;
-    }
-    #wholebox .shadowbox{
-        padding: 15px;
+    .part1, .part2 {
         width: 100%;
-        max-width: 350px;
+        max-width: 400px;
+        margin: 0;
+        text-align: center;
+    }
+    .part1 {
+        padding-top: 0px;
+        padding-right: 0;
+        padding-bottom: 40px;
+    }
+    .q1 {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 0 10px;
+    }
+    .box {
+        width: 100%;
+        max-width: 400px;
         margin: 0 auto;
     }
-    /* #wholebox .titlebox, .inputbox, .shadowbox, .text, .button, #forgottrnlink, #greenbutton, #sent{
-        flex-direction: column;
-        text-align: center;
-        width: 100%; */
-    /* } */
-} 
+    .loginButton, .cna {
+        width: 90%;
+    }
+    .fin{
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .q1 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .f1 {
+        height: 80px;
+        margin: 0 auto;
+    }
+    .im {
+        padding: 80px 0 16px;
+    }
+    #email, #psw {
+        width: 90%;
+    }
+    .loginButton, .cna {
+        width: 90%;
+    }
+    .box {
+        padding: 10px 0 20px;
+    }
+    .fp {
+        font-size: 12px;
+    }
+    .tot {
+        padding: 10px;
+    }
+}
